@@ -6,7 +6,7 @@
 /*   By: hel-band <hel-band@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 10:25:54 by hel-band          #+#    #+#             */
-/*   Updated: 2024/12/18 16:51:12 by hel-band         ###   ########.fr       */
+/*   Updated: 2024/12/21 19:41:40 by hel-band         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,7 +141,7 @@ bool Converter::isDouble(void) const {
     if (_str[0] == '+' || _str[0] == '-') {
         startIndex = 1;
     }
-    for (int i = startIndex; i < _str.size(); i++) {
+    for (int i = startIndex; i < (int)_str.size(); i++) {
         if (_str[i] == '.') {
             dotCount++;
             if (dotCount > 1) {
